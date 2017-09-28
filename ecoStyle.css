@@ -1,0 +1,119 @@
+html
+{
+background-color:#ababab;
+background-image:url('space.jpg');
+background-repeat:repeat;
+
+}
+#content
+{
+position:absolute;
+top:250px;
+left:17.5px;
+width:765px;
+height:500px;
+background-color:white;
+font-family:verdana;
+z-index:1;
+border-radius: 15px;
+padding:15px;
+
+
+}
+
+a:link
+{
+color:black;
+font-weight:bold;
+}
+
+#content br
+{
+line-height:2;
+}
+#menu
+{
+position:absolute;
+top:185px;
+left:220px;
+width:585px;
+background-color:#ffffff;
+}
+ ul
+{
+list-style-type: none;
+}
+
+ li
+{
+margin-left:20px;
+margin-right:20px;
+float:left;
+font-family:verdana;
+color:#000000;
+
+}
+
+#menu a
+{
+text-decoration:none;
+color:#000000;
+font-weight:bold;
+}
+
+#menu a:hover
+{
+color:#787A78;
+}
+#frogLogo
+{
+position:absolute;
+top:10px;
+left:5px;
+width:100px;
+height:100px;
+background-color:#000000;
+z-index:1;
+}
+
+#ecoLogo
+{
+border-radius: 15px;
+position:absolute;
+top:25px;
+left: 250px;
+text-align:center;
+padding:45px;
+font-family:arial;
+font-size:20px;
+width:445px;
+height:100px;
+background-color:#ffffff;
+color:#000000;
+text-shadow: 5px 5px 5px #ababab;
+z-index:0;
+}
+
+#ecoLogo img
+{
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:45px;
+height:45px;
+}
+
+
+#wrapper
+{
+border-radius: 15px;
+padding:15px;
+margin-left: auto ;
+  margin-right: auto ;
+position:relative;
+top:0px;
+left:0px;
+width:800px;
+height:800px;
+background-color:#ffffff;
+}
