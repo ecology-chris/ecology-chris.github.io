@@ -1,49 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="ecoStyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chris Corriere | Linktree</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../chriscorriere.com/img/favicon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="wrapper">
-  <div id="frogLogo" ><a href='index.html'><img src="c2t.jpg" /></a></div>
-  <div id="ecoLogo">Technological Mathematician @ Large.
-  <br/>
-  <ul>
-  <li><a href="talks.html">Talks</a></li>
-  <li><a href="posts.html">Articles</a></li>
-  </ul>
-  <br/>
-  <ul>
-    <li><a href="http://twitter.com/cacorriere"><img onmouseover="this.src='twitterC.jpg'" onmouseout="this.src='twitter.jpg'" src="twitter.jpg" /></a></li>
-    <li><a href="http://www.linkedin.com/pub/chris-corriere/14/5a1/159"><img onmouseover="this.src='linkedInC.jpg'" onmouseout="this.src='linkedIn.jpg'"  src="linkedIn.jpg" /></a></li>
-  </ul>
-  </div>
-
-<div id="content">
-  I've been working in IT since I was in middle school. I spent
-  a lot of time upgrading modems and eventually converting them to DSL networks
-  from the repair shop out of my parents dining room up until the point I moved
-  off to college in Atlanta, GA. <br> I came across a handful of
-  opportunities  after I was hired by the Division of Information Technology at
-  Southern Polytechnic State University in late 2002. I eventually ran into a 6
-  month project through my side business and decided to make the jump into full
-  time consulting. <br> I consulted around Atlanta for 2 years before picking up
-  a full time gig at a .Net development shop. Since then I've learned a lot
-  about the best way to code for both the business, the developers, the networking
-  and data center teams, and most importantly the software's end user. <br> After
-  attending Velocity San Francisco in 2013 I became a full fledged DevOps
-  convert. It's about tools and culture outside of development and operations
-  work. It's about measuring things and trying to get better every time we do
-  something and making sure the 'better' we're striving for is the best thing for
-  everyone involved. <br> I love what I do and enjoy any chance to hear what
-  others in industry are up to in their shops. I don't have as much free time as
-  I'd like these days but I'd still love to talk about how we can help each other
-  if and when we should have the chance. <br> To learn more about my center of
-  practice please visit <a href="http://www.ecology-computing.com">Ecology
-  Computing</a> or read<br> <a href="http://goo.gl/w1AgXC">Rugged
-  Baselines for Cybernetic Systems</a> (Latest version. Originally posted
-  05/07/2017).
-</div>
-</div>
+  <main class="text-center mt-5">
+    <img src="../chriscorriere.com/img/c2t.jpg" alt="Chris Corriere" class="profile-img">
+    <h1 class="mb-0">Chris Corriere</h1>
+    <div class="tagline mb-4">sociotechnical mathematician. complexity scientist.</div>
+    <div class="d-grid gap-2 mb-4">
+      <a href="https://chriscorriere.com" class="btn btn-outline-primary link-btn" target="_blank">chriscorriere.com</a>
+      <a href="https://www.ecology-computing.com" class="btn btn-outline-success link-btn" target="_blank">ecology-computing.com</a>
+      <a href="https://bsky.app/profile/did:plc:444hx56eslnky2csptab7cru" class="btn btn-primary link-btn" target="_blank">
+        <img src="../chriscorriere.com/img/bsky2.png" alt="Bluesky" style="width:24px; height:24px; vertical-align:middle; margin-right:8px;">Bluesky: @ecology-chris.com
+      </a>
+    </div>
+    <div class="social-icons mb-4">
+      <a href="https://www.linkedin.com/in/chris-corriere/" target="_blank"><img src="../chriscorriere.com/img/linkedIn.png" data-hover="../chriscorriere.com/img/linkedIn2.png" data-src="../chriscorriere.com/img/linkedIn.png" alt="LinkedIn"></a>
+      <a href="https://github.com/ecology-chris" target="_blank"><img src="../chriscorriere.com/img/gh.png" data-hover="../chriscorriere.com/img/gh1.png" data-src="../chriscorriere.com/img/gh.png" alt="GitHub"></a>
+      <a href="https://www.instagram.com/ecology_chris/" target="_blank"><img src="../chriscorriere.com/img/ig1.png" data-hover="../chriscorriere.com/img/ig2.png" data-src="../chriscorriere.com/img/ig1.png" alt="Instagram"></a>
+      <a href="https://twitter.com/ecology_chris" target="_blank"><img src="../chriscorriere.com/img/twitter.png" data-hover="../chriscorriere.com/img/twitter2.png" data-src="../chriscorriere.com/img/twitter.png" alt="Twitter"></a>
+    </div>
+    <div class="text-muted small">Landing page for Bluesky: <a href="https://bsky.app/profile/did:plc:444hx56eslnky2csptab7cru" target="_blank">@ecology-chris.com</a></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Social icon hover swap
+    document.querySelectorAll('.social-icons img').forEach(function(img) {
+      var hover = img.getAttribute('data-hover');
+      var src = img.getAttribute('data-src');
+      if (hover) {
+        img.addEventListener('mouseover', function() {
+          img.src = hover;
+        });
+        img.addEventListener('mouseout', function() {
+          img.src = src;
+        });
+      }
+    });
+  </script>
 </body>
-</html>
+</html> 
